@@ -1,0 +1,54 @@
+@import "./normalize.css";
+
+/* :root->获取根元素html */
+:root {
+  --colour-text: #666;
+  --colour-high-text: #ff5777;
+  --colour-tint: #ff8198;
+  --colour-background: #fff;
+  --font-size: 14px;
+  --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif,
+    "PingFang SC", "Hiragion Sans GB", "Microsoft YaHei", "微软雅黑";
+  background: var(--colour-background);
+  color: var(--colour-text);
+  /* rem vw/vh */
+  width: 100vw;
+}
+
+a {
+  color: var(--colour-text);
+  text-decoration: none;
+}
+
+.clear-fix::after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
