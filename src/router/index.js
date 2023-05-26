@@ -6,10 +6,10 @@ VueRouter.prototype.replace = function replace(location) {
   return originalReplace.call(this, location).catch(err => err);
 };
 
-const Home = () => import('@/views/home/Home')
-const Category = () => import('@/views/category/Category')
-const Cart = () => import('@/views/cart/Cart')
-const Profile = () => import('@/views/profile/Profile')
+const Home = () => import('views/home/Home')
+const Category = () => import('views/category/Category')
+const Cart = () => import('views/cart/Cart')
+const Profile = () => import('views/profile/Profile')
 
 Vue.use(VueRouter)
 
