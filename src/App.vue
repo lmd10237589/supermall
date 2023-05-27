@@ -16,6 +16,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+@import 'ant-design-vue/dist/antd.css';
 @import "assets/css/base.css";
 </style>

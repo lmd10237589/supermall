@@ -17,7 +17,7 @@ export default {
   name: "TabBarItem",
   props: {
     path: String,
-    activeColour: {
+    activecolor: {
       type: String,
       default: '#f37e03',
     }
@@ -32,7 +32,7 @@ export default {
       return this.$route.path.indexOf(this.path) !== -1
     },
     activeStyle() {
-      return this.isActive ? { color: this.activeColour } : {}
+      return this.isActive ? { color: this.activecolor } : {}
     }
   },
   methods: {
@@ -43,7 +43,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tab-bar-item {
   flex: 1;
   text-align: center;

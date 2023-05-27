@@ -1,6 +1,6 @@
 <template>
     <TabBar>
-      <TabBarItem path="/home" activeColour="blue">
+      <TabBarItem path="/home" activecolor="blue">
         <img slot="item-icon" src="~assets/img/tabbar/shouye.svg">
         <img slot="item-icon-active" src="~assets/img/tabbar/shouye1.svg">
         <div slot="item-text">首页</div>
@@ -37,6 +37,6 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 
 </style>
